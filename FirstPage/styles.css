@@ -1,0 +1,235 @@
+html,
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.Logo img {
+    width: 12%;
+}
+
+.BlogName {
+    height: 20%;
+    color: #FF7575;
+    font-size: 4.75rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.Desc {
+    margin-top: 1.6%;
+    height: 20%;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.fa-twitter {
+    background-color: none;
+    line-height: 230%;
+    z-index: 1;
+    color: white;
+    border-radius: 10%;
+    height: 23%;
+    width: 0%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0%;
+    margin-left: 50%;
+}
+
+.Container {
+    background-color: #232830;
+    border: 2px solid rgb(14, 228, 235);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.Header {
+    display: flex;
+    border: 2px solid rgb(216, 16, 16);
+    height: 12%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.Writings {
+    color: white;
+    margin-left: 13%;
+    font-family: sans-serif;
+    margin-top: 1%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.Links {
+    display: flex;
+    margin-top: 1.6%;
+    margin-left: 42%;
+    font-weight: 400;
+    font-size: 30px;
+    gap: 40px;
+}
+
+.Links a{
+    color: white;
+    justify-content: right;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.Title {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    margin-top: 4.5%;
+}
+
+.HeroSection {
+    margin-top: 7%;
+    display: grid;
+    border-top:3px solid #4D4D4D;
+    border-bottom:3px solid #4D4D4D;
+    height: 100vh;
+    width: 100%;
+}
+
+.Footer {
+    height: 10%;
+    border-top: #4D4D4D;
+    display: flex;
+    flex-direction: row;
+}
+
+.Twitter {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+#TwitterText {
+    line-height: 120%;
+    background-color: #4699E0;
+    display: inline-block;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 2%;
+    margin-left: 0%;
+    text-align: right;
+    transform: translateX(-5%);
+    padding-right: 2%;
+    width: 40%;
+}
+
+.Author {
+  position: relative;
+  display: flex;
+  color: white;
+  width: 50%;
+  margin-inline-end: 10%;
+  font-family: sans-serif;
+}
+
+.Author .Site {
+    margin-left: 20%;
+    line-height: 300%;
+}
+
+.Author .By {
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  transform: translateY(-90%);
+  line-height: 24px;
+  text-align: center;
+  background: #4699E0;
+  border-radius: 5px;
+  top: 40%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35%;
+}
+
+
+@media (max-width: 450px) and (min-width: 400px){
+    .Author .By {
+        width: auto;
+        max-width: 100%;
+        max-height: 30%;
+        font-size: 0.65rem;
+        padding: 0 6px;
+        transform: translateY(-140%);
+        padding-right: 10px;
+        margin-right: 20%;
+    }
+
+    .Author .Site {
+        width: auto;
+        max-width: 100%;
+        font-size: 0.75rem;
+        line-height: 380%;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 390px) and (min-width: 330px){
+    .Author .By {
+        width: auto;
+        max-width: 100%;
+        max-height: 30%;
+        font-size: 0.55rem;
+        padding: 0 6px;
+        transform: translateY(-140%);
+        padding-right: 10px;
+        margin-right: 15%;
+    }
+
+    .Author .Site {
+        width: auto;
+        max-width: 100%;
+        font-size: 0.75rem;
+        line-height: 250%;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 320px){
+    .Author .By {
+        width: auto;
+        max-width: 100%;
+        max-height: 30%;
+        font-size: 0.55rem;
+        padding: 0 6px;
+        transform: translateY(-140%);
+        padding-right: 10px;
+        margin-right: 3%;
+    }
+
+    .Author .Site {
+        width: auto;
+        max-width: 100%;
+        font-size: 0.75rem;
+        line-height: 200%;
+        margin-left: 4px;
+    }
+}
+
+
