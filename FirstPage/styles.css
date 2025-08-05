@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0%;
 }
 
@@ -57,6 +58,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .Header {
@@ -101,12 +103,81 @@ body {
 }
 
 .HeroSection {
-    margin-top: 7%;
-    display: grid;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
     border-top:3px solid #4D4D4D;
     border-bottom:3px solid #4D4D4D;
-    height: 100vh;
+    /*height: 300vh;*/
     width: 100%;
+}
+
+.Topics {
+    margin-top: .5%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    color: #4D4D4D;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border: #4699E0 2px solid;
+    font-size: 2.2rem;
+}
+
+.CardsGrid {
+    margin-top: 3%;
+    /*height: 300vh;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3 ,420px);
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.CardsGrid > div {
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    height: 500px;
+    column-gap: 0px;
+    width: 420px;
+    background-color: white;
+}
+
+.CardsGrid > div > img {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius:30px;
+    height: 200px;
+    width: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Text h3,
+.Text p {
+    margin: 10px 0; /* Reducir espacio arriba y abajo */
+}
+
+.Text .date {
+    margin: 20px 0;
+}
+
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
 .Footer {
