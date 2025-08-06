@@ -5,17 +5,17 @@ body {
     margin: 0%;
 }
 
-.Logo{
+.Logo {
     display: flex;
     justify-content: center;
-    border: 2px solid white;
     width: 100%;
     height: 100%;
     justify-content: center;
 }
 
 .Logo img {
-    width: 12%;
+    height: 15em;
+    width: auto;
 }
 
 .BlogName {
@@ -37,23 +37,32 @@ body {
     font-family: sans-serif;
 }
 
-.fa-twitter {
-    background-color: none;
-    line-height: 230%;
-    z-index: 1;
-    color: white;
-    border-radius: 10%;
-    height: 23%;
-    width: 0%;
+.twitter-button {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 0%;
-    margin-left: 50%;
+    gap: 20px;
+    background-color: #4699E0;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    width: 12%;
+    height: 20px;
+    margin-left: 10%;
+    margin-top: 1.7%;
+}
+
+.twitter-button i {
+    font-size: 1.2rem;
+    margin-left: 0%;
+    line-height: 50%;
 }
 
 .Container {
     background-color: #232830;
-    border: 2px solid rgb(14, 228, 235);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -63,7 +72,6 @@ body {
 
 .Header {
     display: flex;
-    border: 2px solid rgb(216, 16, 16);
     height: 12%;
     width: 100%;
     flex-direction: row;
@@ -87,7 +95,7 @@ body {
     gap: 40px;
 }
 
-.Links a{
+.Links a {
     color: white;
     justify-content: right;
     font-family: sans-serif;
@@ -106,9 +114,8 @@ body {
     margin-top: 6%;
     display: flex;
     flex-direction: column;
-    border-top:3px solid #4D4D4D;
-    border-bottom:3px solid #4D4D4D;
-    /*height: 300vh;*/
+    border-top: 2px solid #4D4D4D;
+    border-bottom: 2px solid #4D4D4D;
     width: 100%;
 }
 
@@ -119,21 +126,19 @@ body {
     flex-direction: row;
     gap: 30px;
     list-style: none;
-    color: #4D4D4D;
+    color: #909090;
     width: 100%;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    border: #4699E0 2px solid;
     font-size: 2.2rem;
 }
 
 .CardsGrid {
     margin-top: 3%;
-    /*height: 300vh;*/
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3 ,420px);
+    grid-template-columns: repeat(3, 420px);
     gap: 40px;
     padding: 20px;
     justify-content: center;
@@ -144,7 +149,6 @@ body {
     border-radius: 30px;
     flex-direction: column;
     height: 500px;
-    column-gap: 0px;
     width: 420px;
     background-color: white;
 }
@@ -153,22 +157,12 @@ body {
     margin-top: 7%;
     margin-left: 5%;
     margin-right: 5%;
-    border-radius:30px;
+    border-radius: 30px;
     height: 200px;
     width: 380px;
     object-fit: cover;
     object-position: center;
 }
-
-.Text h3,
-.Text p {
-    margin: 10px 0; /* Reducir espacio arriba y abajo */
-}
-
-.Text .date {
-    margin: 20px 0;
-}
-
 
 .Text {
     display: flex;
@@ -178,6 +172,35 @@ body {
     margin-right: 5%;
     font-size: 20px;
     font-family: sans-serif;
+}
+
+.Text h3,
+.Text p {
+    margin: 10px 0;
+}
+
+.Text .date {
+    margin: 20px 0;
+}
+
+.Pages {
+    margin-top: 7%;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    color: #909090;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.Selector {
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .Footer {
@@ -194,57 +217,197 @@ body {
     width: 50%;
 }
 
-#TwitterText {
-    line-height: 120%;
-    background-color: #4699E0;
-    display: inline-block;
-    border-radius: 5px;
-    height: 20px;
-    margin-top: 2%;
-    margin-left: 0%;
-    text-align: right;
-    transform: translateX(-5%);
-    padding-right: 2%;
-    width: 40%;
-}
-
 .Author {
-  position: relative;
-  display: flex;
-  color: white;
-  width: 50%;
-  margin-inline-end: 10%;
-  font-family: sans-serif;
+    position: relative;
+    display: flex;
+    color: white;
+    width: 50%;
+    margin-inline-end: 10%;
+    font-family: sans-serif;
+    height: 40%;
 }
 
 .Author .Site {
-    margin-left: 20%;
+    margin-left: 30%;
     line-height: 300%;
+    font-size: 2rem;
 }
 
 .Author .By {
-  position: absolute;
-  width: 25%;
-  height: 30%;
-  transform: translateY(-90%);
-  line-height: 24px;
-  text-align: center;
-  background: #4699E0;
-  border-radius: 5px;
-  top: 40%;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 35%;
+    position: absolute;
+    width: 17%;
+    height: 40%;
+    font-size: 1.2rem;
+    transform: translateY(-90%);
+    line-height: 40px;
+    text-align: center;
+    background: #4699E0;
+    border-radius: 5px;
+    top: 62%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 31%;
+}
+
+/* ✅ MEDIA QUERIES */
+
+@media (max-width: 1500px) {
+    .Container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .Header {
+        padding: 0 5%;
+    }
+
+    .Writings {
+        font-size: 3rem;
+    }
+
+    .Links {
+        font-size: 1.6rem;
+        gap: 50px;
+    }
+
+    .Topics {
+        font-size: 2.4rem;
+        gap: 40px;
+    }
+
+    .Pages {
+        font-size: 2.2rem;
+        gap: 40px;
+    }
+
+    .CardsGrid {
+        grid-template-columns: repeat(3, 420px);
+        gap: 50px;
+    }
+
+    .twitter-button {
+        margin-bottom: 5%;
+        width: 12%;
+        font-size: 1rem;
+    }
+
+    .Author .Site {
+        font-size: 1.5rem;
+    }
+
+    .Author .By {
+        font-size: 1rem;
+        padding: 6px 12px;
+        margin-right: 30%;
+    }
 }
 
 
-@media (max-width: 450px) and (min-width: 400px){
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .Writings {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .Links {
+        font-size: 1.5rem;
+        gap: 25px;
+        margin-right: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Topics {
+        font-size: 1.8rem;
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .Pages {
+        font-size: 1.5rem;
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .Footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+    }
+
+    .Twitter,
+    .Author {
+        width: auto;
+    }
+
+    .Author .Site {
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+
+    .Author .By {
+        font-size: 1rem;
+        width: auto;
+        height: auto;
+        transform: none;
+        position: relative;
+        padding: 4px 8px;
+        margin-left: 30px;
+    }
+
+    .twitter-button {
+        font-size: 1rem;
+        width: 25%;
+        margin-left: 5%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .CardsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .CardsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 400px) {
+    .Logo img {
+        height: 9em;
+    }
+
+    .BlogName {
+        font-size: 2.5rem;
+    }
+
+    .Desc {
+        font-size: 1.2rem;
+    }
+
+    .twitter-button {
+        font-size: 1rem;
+        width: 50%;
+        gap: 10px;
+    }
+
     .Author .By {
         width: auto;
-        max-width: 100%;
-        max-height: 30%;
         font-size: 0.65rem;
         padding: 0 6px;
         transform: translateY(-140%);
@@ -253,19 +416,32 @@ body {
     }
 
     .Author .Site {
-        width: auto;
-        max-width: 100%;
         font-size: 0.75rem;
         line-height: 380%;
         margin-left: 5px;
     }
 }
 
-@media (max-width: 390px) and (min-width: 330px){
+@media (max-width: 390px) and (min-width: 330px) {
+    .Logo img {
+        height: 8em;
+    }
+
+    .BlogName {
+        font-size: 2rem;
+    }
+
+    .Desc {
+        font-size: 1.1rem;
+    }
+
+    .twitter-button {
+        font-size: 0.9rem;
+        width: 60%;
+        gap: 8px;
+    }
+
     .Author .By {
-        width: auto;
-        max-width: 100%;
-        max-height: 30%;
         font-size: 0.55rem;
         padding: 0 6px;
         transform: translateY(-140%);
@@ -274,19 +450,32 @@ body {
     }
 
     .Author .Site {
-        width: auto;
-        max-width: 100%;
         font-size: 0.75rem;
         line-height: 250%;
         margin-left: 5px;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
+    .Logo img {
+        height: 7em;
+    }
+
+    .BlogName {
+        font-size: 1.8rem;
+    }
+
+    .Desc {
+        font-size: 1rem;
+    }
+
+    .twitter-button {
+        font-size: 0.8rem;
+        width: 70%;
+        gap: 6px;
+    }
+
     .Author .By {
-        width: auto;
-        max-width: 100%;
-        max-height: 30%;
         font-size: 0.55rem;
         padding: 0 6px;
         transform: translateY(-140%);
@@ -295,12 +484,93 @@ body {
     }
 
     .Author .Site {
-        width: auto;
-        max-width: 100%;
         font-size: 0.75rem;
         line-height: 200%;
         margin-left: 4px;
     }
 }
 
+@media (max-width: 768px) {
+    /* Header: cambia a columna en pantallas pequeñas */
+    .Header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
 
+    .Writings {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .Links {
+        margin: 10px 0;
+        margin-left: 0;
+        gap: 20px;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Topics: permite envolver */
+    .Topics {
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Pages: ajuste y wrap */
+    .Pages {
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        gap: 15px;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Footer: en columna y centrado */
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .Twitter,
+    .Author {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .Author {
+        flex-direction: column;
+    }
+
+    .Author .Site {
+        font-size: 1rem;
+        margin-left: 0;
+        line-height: normal;
+    }
+
+    .Author .By {
+        position: static;
+        margin: 10px 0 0 0;
+        transform: none;
+        align-self: center;
+        width: 30%;
+        height: auto;
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .twitter-button {
+        width: 35%;
+        margin-right: 10%;
+    }
+}
